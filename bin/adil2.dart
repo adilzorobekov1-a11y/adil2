@@ -1,5 +1,19 @@
-import 'package:adil2/adil2.dart' as adil2;
+void main() {
+  String dayOfWeek = "Суббота"; 
 
-void main(List<String> arguments) {
-  print('Hello world: ${adil2.calculate()}!');
+  switch (dayOfWeek) {
+    case "Понедельник":
+    case "Вторник":
+    case "Среда":
+    case "Четверг":
+    case "Пятница":
+      print("Рабочий день.");
+      break;
+    case "Суббота":
+    case "Воскресенье":
+      print("Выходной день.");
+      break;
+    default:
+      print("День недели указан неверно!");
+  }
 }
